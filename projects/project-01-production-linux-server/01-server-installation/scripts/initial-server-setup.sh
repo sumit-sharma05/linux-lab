@@ -1,34 +1,81 @@
 #!/bin/bash
 
-echo "======================================"
-echo " Production Linux Server Setup"
-echo "======================================"
+echo "========================================"
+echo " CloudRox - Initial Linux Server Setup"
+echo "========================================"
 
+echo ""
 echo "Updating package index..."
 sudo apt update
 
-echo "Upgrading packages..."
+echo ""
+echo "Upgrading installed packages..."
 sudo apt upgrade -y
 
-echo "Installing common packages..."
+echo ""
+echo "Installing common utilities..."
 sudo apt install -y \
 curl \
 wget \
-vim \
 git \
+vim \
+nano \
+zip \
 unzip \
 htop \
 net-tools \
-tree
+tree \
+software-properties-common
 
-echo "Cleaning unused packages..."
+echo ""
+echo "Cleaning unnecessary packages..."
 sudo apt autoremove -y
 
-echo "Checking system information..."
+echo ""
+echo "Server Information"
+
+echo "----------------------------------------"
+
+echo "Current User:"
+whoami
+
+echo ""
+
+echo "Hostname:"
 hostnamectl
+
+echo ""
+
+echo "Operating System:"
+cat /etc/os-release
+
+echo ""
+
+echo "Kernel:"
+uname -r
+
+echo ""
+
+echo "CPU:"
+lscpu | head
+
+echo ""
+
+echo "Memory:"
 free -h
+
+echo ""
+
+echo "Disk:"
 df -h
 
-echo "======================================"
-echo " Initial Server Setup Completed"
-echo "======================================"
+echo ""
+
+echo "IP Address:"
+ip addr
+
+echo ""
+
+echo "Setup Completed Successfully."
+
+echo "========================================"
