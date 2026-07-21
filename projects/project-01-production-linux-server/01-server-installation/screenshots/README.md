@@ -1,17 +1,15 @@
-# Screenshots
+# Architecture
 
-This folder contains screenshots captured during the Production Linux Server Installation project.
+```mermaid
+flowchart TD
+    A[Internet] --> B[AWS EC2]
+    B --> C[Ubuntu Server 24.04]
+    C --> D[Nginx]
+    D --> E[Custom Homepage]
+```
 
-## Screenshots to Capture
+## Description
 
-- Ubuntu Server Created
-- SSH Login
-- System Update
-- Hostname Configuration
-- Timezone Configuration
-- Firewall Configuration
-- Swap Configuration
-- Nginx Installation
-- Final Server Status
+A request comes from the Internet to the AWS EC2 instance.
 
-> Every screenshot should clearly show the terminal output.
+The Ubuntu server receives the request, and Nginx serves the custom homepage to the client.
