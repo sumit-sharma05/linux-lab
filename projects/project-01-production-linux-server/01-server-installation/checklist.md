@@ -1,87 +1,33 @@
-# Production Server Validation Checklist
+# Checklist
 
-## Server Information
+## Completed
 
-- [ ] Verify Operating System
-- [ ] Verify Kernel Version
-- [ ] Verify Hostname
-- [ ] Verify Timezone
-
----
-
-## Hardware Validation
-
-- [ ] Verify CPU
-- [ ] Verify Memory
-- [ ] Verify Disk
-- [ ] Verify Mounted Volumes
+- [x] AWS EC2 instance launched
+- [x] Ubuntu Server 24.04 LTS selected
+- [x] Key pair created
+- [x] Security Group configured
+- [x] Connected to the server using SSH
+- [x] Updated Ubuntu packages
+- [x] Installed Nginx
+- [x] Enabled Nginx service
+- [x] Verified Nginx status
+- [x] Verified the default Nginx page
+- [x] Deployed a custom HTML homepage
 
 ---
 
-## Network Validation
+## In Progress
 
-- [ ] Verify Public IP
-- [ ] Verify Private IP
-- [ ] Verify Internet Connectivity
-- [ ] Verify DNS Resolution
+- [ ] Upload all project screenshots
+- [ ] Complete project documentation
 
 ---
 
-## Security Validation
+## Upcoming
 
-- [ ] SSH Login Working
-- [ ] Root Login Disabled
-- [ ] Firewall Configured
-- [ ] Security Updates Installed
-
----
-
-## Package Management
-
-- [ ] apt update completed
-- [ ] apt upgrade completed
-- [ ] Unused packages removed
-
----
-
-## Services
-
-- [ ] SSH Running
-- [ ] Chrony/NTP Running
-- [ ] Required Services Running
-
----
-
-## Storage
-
-- [ ] Disk Usage Checked
-- [ ] Swap Verified
-
----
-
-## Final Validation
-
-- [ ] System Reboot Successful
-- [ ] No Critical Errors
-- [ ] Ready for Production Deployment
-
----
-
-# Deployment Status
-
-Production Ready
-
-☐ Yes
-
-☐ No
-
----
-
-Prepared By
-
-DevOps Engineer
-
-
-Date:
-
-____________________
+- [ ] Configure UFW Firewall
+- [ ] SSH Hardening
+- [ ] Install Fail2Ban
+- [ ] Configure SSL using Certbot
+- [ ] Configure Domain
+- [ ] Basic Server Monitoring
