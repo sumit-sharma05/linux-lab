@@ -1,130 +1,78 @@
-# Project 01 — Production Linux Server Setup
+# Project 01 - Production Linux Server Setup
 
-## Overview
+## Status
 
-This project demonstrates how to build, secure, and manage a production-ready Linux server used in real-world DevOps environments.
+🚧 In Progress
 
-The goal is to deploy a fresh Ubuntu server, secure it according to industry best practices, configure essential services, automate administrative tasks, and prepare it for hosting production applications.
+## Project Information
 
----
+- **Cloud Provider:** AWS EC2
+- **Operating System:** Ubuntu Server 24.04 LTS
+- **Web Server:** Nginx
 
-# Project Objectives
-
-- Deploy a production Linux server
-- Configure secure SSH access
-- Manage users and permissions
-- Configure networking
-- Secure the server
-- Install and configure Nginx
-- Configure SSL certificates
-- Automate backups
-- Configure monitoring
-- Prepare the server for production deployment
+**Current Stage:** Production server setup and documentation.
 
 ---
 
-# Technology Stack
+## Project Overview
 
-- Ubuntu Server 24.04 LTS
-- Linux
-- Bash
-- SSH
-- Nginx
-- UFW Firewall
-- Fail2Ban
-- Certbot
-- Systemd
-- Cron
-- Logrotate
+This project documents my process of building a production-ready Linux server on AWS from scratch.
+
+Instead of only learning Linux commands, I am documenting every step that I complete on the server.
+
+Each stage includes commands, screenshots, notes, and troubleshooting.
 
 ---
 
-# Production Architecture
+## Current Progress
 
-Internet
+- [x] AWS EC2 instance launched
+- [x] Security Group configured
+- [x] SSH connection established
+- [x] Ubuntu system updated
+- [x] Nginx installed
+- [x] Default Nginx page verified
+- [x] Custom homepage deployed
 
-↓
+### Next Steps
 
-Cloud Server (Ubuntu)
-
-↓
-
-Nginx Reverse Proxy
-
-↓
-
-Application Server
-
-↓
-
-Database Server
-
----
-
-# Implementation Roadmap
-
-- [ ] Deploy Ubuntu Server
-- [ ] Initial Server Configuration
-- [ ] Update System Packages
-- [ ] Create Administrative Users
-- [ ] Configure SSH Security
-- [ ] Configure Firewall
-- [ ] Install Nginx
-- [ ] Configure Virtual Hosts
-- [ ] Install SSL Certificate
-- [ ] Configure Automatic Renewal
-- [ ] Configure Cron Jobs
-- [ ] Configure System Monitoring
-- [ ] Configure Automatic Backups
-- [ ] Configure Log Rotation
-- [ ] Performance Optimization
-- [ ] Production Security Hardening
+- [ ] Configure UFW Firewall
+- [ ] SSH Hardening
+- [ ] Install Fail2Ban
+- [ ] Enable Automatic Security Updates
+- [ ] Configure SSL
+- [ ] System Monitoring
 
 ---
 
-# Repository Structure
+## Screenshots
 
-```
-project-01-production-linux-server/
+### EC2 Instance
 
-README.md
+Coming Soon
 
-01-server-installation/
-02-user-management/
-03-linux-permissions/
-04-package-management/
-05-networking/
-06-ssh-hardening/
-07-firewall/
-08-nginx/
-09-ssl/
-10-systemd/
-11-cron/
-12-monitoring/
-13-backup/
-14-security-hardening/
-15-performance-tuning/
-16-troubleshooting/
+### SSH Login
 
-scripts/
-configs/
-architecture/
-images/
-```
+Coming Soon
+
+### Nginx Default Page
+
+Coming Soon
+
+### Custom Homepage
+
+Coming Soon
 
 ---
 
-# Learning Outcomes
+## Commands Used
 
-After completing this project you will be able to:
-
-- Build production Linux servers
-- Secure cloud infrastructure
-- Deploy production web servers
-- Troubleshoot Linux systems
-- Automate administration tasks
-- Prepare servers for DevOps pipelines
+This section will be updated during implementation.
 
 ---
 
-This project is part of the CloudRox DevOps Engineering Lab.
+## Notes
+
+This project is still under development.
+
+The documentation is updated after completing each task on the server.
