@@ -1,97 +1,104 @@
-# 01 — Production Linux Server Installation
+# Linux Server Setup on AWS EC2
 
-## Real World Scenario
+## Project Overview
 
-A company has purchased a brand-new Ubuntu Server from a cloud provider (AWS, Azure, Google Cloud, DigitalOcean, or Hostinger VPS).
+This project documents how I set up my first production Linux server on AWS EC2.
 
-As a DevOps Engineer, your responsibility is to prepare the server for hosting production applications.
-
-The server must be secure, updated, optimized, monitored, and ready for deployment.
+The goal is to build a strong Linux foundation before moving to advanced DevOps projects. Every step is documented as I complete it.
 
 ---
 
-# Project Objectives
+## What I Built
 
-- Provision a Linux server
-- Connect securely using SSH
-- Verify server configuration
-- Update operating system packages
-- Configure hostname
-- Configure timezone
-- Configure swap memory
-- Verify networking
-- Prepare the server for production workloads
+- Launched an Ubuntu Server on AWS EC2
+- Connected to the server using SSH
+- Updated the operating system
+- Installed Nginx
+- Verified the default Nginx page
+- Deployed a custom homepage
 
 ---
 
-# Environment
+## Server Details
 
-| Item | Value |
-|------|------|
-| Operating System | Ubuntu Server 24.04 LTS |
-| Server Type | Cloud Virtual Machine |
-| Access Method | SSH |
-| User | Ubuntu |
-| Purpose | Production Deployment |
+- Cloud Provider: AWS EC2
+- Operating System: Ubuntu Server 24.04 LTS
+- Web Server: Nginx
 
 ---
 
-# Production Architecture
+## Technologies Used
+
+- AWS EC2
+- Ubuntu Server 24.04 LTS
+- SSH
+- Nginx
+
+---
+
+## Project Structure
 
 ```
-Developer Laptop
-        │
-        ▼
-SSH Connection
-        │
-        ▼
-Cloud VPS
-        │
-        ▼
-Ubuntu Server
-        │
-        ▼
-Production Applications
+linux-server-setup/
+├── README.md
+├── commands.md
+├── notes.md
+├── checklist.md
+├── screenshots/
+└── diagrams/
 ```
 
 ---
 
-# Project Workflow
+## Steps Completed
 
-1. Create Cloud Server
-2. Configure SSH Access
-3. Update Operating System
-4. Verify Internet Connectivity
-5. Configure Hostname
-6. Configure Timezone
-7. Configure Swap Memory
-8. Verify Server Health
+1. Created an AWS EC2 instance
+2. Connected to the server using SSH
+3. Updated Ubuntu packages
+4. Installed Nginx
+5. Verified the default Nginx page
+6. Deployed a custom HTML homepage
 
 ---
 
-# Learning Outcomes
+## Screenshots
 
-After completing this module, you will be able to:
-
-- Deploy a Linux cloud server
-- Connect securely using SSH
-- Perform initial server configuration
-- Prepare a server for production deployment
+Screenshots are available in the `screenshots` folder.
 
 ---
 
-# Files Included
+## Commands
 
-```
-README.md
-commands.md
-notes.md
-screenshots/
-scripts/
-```
+All commands used in this project are documented in `commands.md`.
 
 ---
 
-# Next Module
+## Notes
 
-02 — User Management
+Additional implementation notes are available in `notes.md`.
+
+---
+
+## Current Status
+
+✅ AWS EC2 running
+
+✅ SSH working
+
+✅ Ubuntu updated
+
+✅ Nginx installed
+
+✅ Default Nginx page verified
+
+✅ Custom homepage deployed
+
+---
+
+## Next Steps
+
+- Configure UFW Firewall
+- SSH Hardening
+- Install Fail2Ban
+- Configure SSL using Certbot
+- Basic Server Monitoring
